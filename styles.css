@@ -1,0 +1,72 @@
+.content {
+  width: 300px;
+  height: 360px;
+  border: 1px solid #CCC;
+  margin: 40px 0;
+  perspective: 600px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.card:hover {
+  transform: rotateX(-180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  background: black
+}
+
+.card__face--back {
+  background: orange;
+  transform: rotateX(180deg);
+}
+
+.job-position{
+  font-size: 20px;
+  color: lightgray;
+  border: 1px solid lightgray;
+}
+
+.logo{
+  width: 30px;
+  height: 30px;
+}
+
+.person{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.text{
+  padding: 5px;
+  font-size: 20px;
+}
+
+.heart{
+  width: 70px;
+  height: 70px;
+}
+
